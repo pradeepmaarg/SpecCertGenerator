@@ -1,0 +1,8 @@
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\bin\Debug\Maarg.Contracts.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\bin\Debug\Maarg.Contracts.pdb
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\bin\Debug\Maarg.Contracts.dll.CodeAnalysisLog.xml
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\bin\Debug\Maarg.Contracts.dll.lastcodeanalysissucceeded
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\obj\Debug\Maarg.Contracts.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\obj\Debug\Maarg.Contracts.pdb

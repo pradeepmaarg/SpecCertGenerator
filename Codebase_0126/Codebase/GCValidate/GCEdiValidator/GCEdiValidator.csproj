@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9529281-163C-452F-A81B-7246A317A92F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maarg.Fatpipe.EDIPlug.GCEdiValidator</RootNamespace>
+    <AssemblyName>Maarg.Fatpipe.EDIPlug.GCEdiValidator</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizRuleCertValidator.cs" />
+    <Compile Include="BizRuleValidator.cs" />
+    <Compile Include="GCValidatorHelper.cs" />
+    <Compile Include="ManageBizRuleCerts.cs" />
+    <Compile Include="ManageSpecCerts .cs" />
+    <Compile Include="GCEdiValidatorException.cs" />
+    <Compile Include="EdiValidationResultExtensions.cs" />
+    <Compile Include="EdiValidator.cs" />
+    <Compile Include="RuleSegments.cs" />
+    <Compile Include="SchemaCache.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpecCertValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\DAL.csproj">
+      <Project>{3B0BD590-6DFB-409B-8FFC-B49AE20220E1}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Maarg.Contracts\Maarg.Contracts.csproj">
+      <Project>{E568C043-D9E8-494C-A3BA-F0A3EDB365CE}</Project>
+      <Name>Maarg.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plug\EDIPlug\EDIPlug.csproj">
+      <Project>{FB0CD1A3-8EE6-4981-A241-8463E060CC94}</Project>
+      <Name>EDIPlug</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plug\FlatFilePlug\FlatFilePlug.csproj">
+      <Project>{19B5ACDD-4815-4DDF-AB7E-B2B20FF558C7}</Project>
+      <Name>FlatFilePlug</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plug\PlugAuthoring\PlugAuthoring.csproj">
+      <Project>{DDC7E2C3-6A92-43CE-B207-125A0047E567}</Project>
+      <Name>PlugAuthoring</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plug\Plug\PlugDataModel.csproj">
+      <Project>{04BB472C-A552-4417-8C9D-C605555B84F6}</Project>
+      <Name>PlugDataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plug\XmlFilePlug\XmlFilePlug.csproj">
+      <Project>{B269EC0F-DFD5-4F9B-B0BE-F16D7A2AE0D9}</Project>
+      <Name>XmlFilePlug</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

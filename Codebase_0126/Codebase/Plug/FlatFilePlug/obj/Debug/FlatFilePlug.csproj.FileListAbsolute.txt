@@ -1,0 +1,17 @@
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.Fatpipe.FlatFilePlug.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.Fatpipe.FlatFilePlug.pdb
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.Contracts.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.Fatpipe.LoggingService.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.Fatpipe.Plug.DataModel.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.FatpipeAPI.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.AllAboard.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.FatpipeAPI.pdb
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.Fatpipe.LoggingService.pdb
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.Contracts.pdb
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.Fatpipe.Plug.DataModel.pdb
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\bin\Debug\Maarg.AllAboard.pdb
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\obj\Debug\FlatFilePlug.csprojResolveAssemblyReference.cache
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\obj\Debug\Maarg.Fatpipe.FlatFilePlug.dll
+C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\obj\Debug\Maarg.Fatpipe.FlatFilePlug.pdb

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3B0BD590-6DFB-409B-8FFC-B49AE20220E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maarg.AllAboard</RootNamespace>
+    <AssemblyName>Maarg.AllAboard</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows Azure\.NET SDK\2012-10\ref\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows Azure\.NET SDK\2012-10\ref\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppEntities\BizMessageFactory.cs" />
+    <Compile Include="AppEntities\BizpipeMesssageStreaming.cs" />
+    <Compile Include="Commerce\BaseCommerceDal.cs" />
+    <Compile Include="Commerce\DalBillingCycle.cs" />
+    <Compile Include="Commerce\DalOffer.cs" />
+    <Compile Include="Commerce\DalBillingSummary.cs" />
+    <Compile Include="Commerce\DalOrder.cs" />
+    <Compile Include="Commerce\DalTimeoffset.cs" />
+    <Compile Include="Commerce\DalUsageEvent.cs" />
+    <Compile Include="Common\Cache.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="AzureDalManager.cs" />
+    <Compile Include="DALClasses\DalEntityBase.cs" />
+    <Compile Include="DALClasses\DalInbox.cs" />
+    <Compile Include="DALClasses\DalPartner.cs" />
+    <Compile Include="DALClasses\DalPartnerAccount.cs" />
+    <Compile Include="DALClasses\DalPlugConfiguration.cs" />
+    <Compile Include="DALClasses\DALSchema.cs" />
+    <Compile Include="DALClasses\DalTenant.cs" />
+    <Compile Include="DALImplementation.cs" />
+    <Compile Include="DataEntities\BasePropertyBag.cs" />
+    <Compile Include="DataEntities\ConnectorConfiguration.cs" />
+    <Compile Include="DataEntities\BlobConnectorConfiguration.cs" />
+    <Compile Include="DataEntities\FatpipeMessage.cs" />
+    <Compile Include="DataEntities\FtpConnectorConfiguration.cs" />
+    <Compile Include="DataEntities\InboundAs2PropertyBag.cs" />
+    <Compile Include="DataEntities\InboundEdiPropertyBag.cs" />
+    <Compile Include="DataEntities\InboxConnectorConfiguration.cs" />
+    <Compile Include="DataEntities\OutboundAs2PropertyBag.cs" />
+    <Compile Include="DataEntities\OutboundEdiPropertyBag.cs" />
+    <Compile Include="DataEntities\Partner.cs" />
+    <Compile Include="DataEntities\PartnerAccount.cs" />
+    <Compile Include="DataEntities\Tenant.cs" />
+    <Compile Include="DataEntities\TransformationDefinition.cs" />
+    <Compile Include="GCValidate\DALBtsAssemblyFiles.cs" />
+    <Compile Include="GCValidate\DALBtsAssemblyFilesMetadata.cs" />
+    <Compile Include="GCValidate\DALBizRuleCertMetadata.cs" />
+    <Compile Include="GCValidate\DALBizRuleCert.cs" />
+    <Compile Include="GCValidate\DALTradingPartnerSpecCertMetadata.cs" />
+    <Compile Include="GCValidate\DALTradingPartnerSpecCert.cs" />
+    <Compile Include="IDalManager.cs" />
+    <Compile Include="DalManagerFactory.cs" />
+    <Compile Include="Common\MaargConfiguration.cs" />
+    <Compile Include="Common\ConcatenatingStream.cs" />
+    <Compile Include="AppEntities\NotificationMessageFactory.cs" />
+    <Compile Include="AppEntities\StreamHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LoggingService\LoggingService.csproj">
+      <Project>{8E604022-942A-459C-B40B-A3E0B987968D}</Project>
+      <Name>LoggingService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Maarg.Contracts\Maarg.Contracts.csproj">
+      <Project>{E568C043-D9E8-494C-A3BA-F0A3EDB365CE}</Project>
+      <Name>Maarg.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plug\Plug\PlugDataModel.csproj">
+      <Project>{04BB472C-A552-4417-8C9D-C605555B84F6}</Project>
+      <Name>PlugDataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

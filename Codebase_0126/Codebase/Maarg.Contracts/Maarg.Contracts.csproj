@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E568C043-D9E8-494C-A3BA-F0A3EDB365CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maarg.Contracts</RootNamespace>
+    <AssemblyName>Maarg.Contracts</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Microsoft SDKs\Windows Azure\.NET SDK\2012-10\ref\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectorConfiguration\IBlobConnectorConfiguration.cs" />
+    <Compile Include="GCValidate\CertFileType.cs" />
+    <Compile Include="GCValidate\BizRuleCertsMetadata.cs" />
+    <Compile Include="GCValidate\BizRuleCertValidationResult.cs" />
+    <Compile Include="GCValidate\BizRulesValidationResult.cs" />
+    <Compile Include="GCValidate\BtsAssemblyFilesMetadata.cs" />
+    <Compile Include="GCValidate\EDIValidationResult.cs" />
+    <Compile Include="GCValidate\SpecCertValidationResult.cs" />
+    <Compile Include="GCValidate\TradingPartnerSpecCertMetadata.cs" />
+    <Compile Include="PartnerStatus.cs" />
+    <Compile Include="Messaging\B2BProtocolType.cs" />
+    <Compile Include="Messaging\BizMessageAction.cs" />
+    <Compile Include="Commerce\BillingCore.cs" />
+    <Compile Include="Commerce\Offer.cs" />
+    <Compile Include="Commerce\UsageBilling.cs" />
+    <Compile Include="ConnectorConfiguration\IConnectorConfiguration.cs" />
+    <Compile Include="ConnectorConfiguration\IFtpConnectorConfiguration.cs" />
+    <Compile Include="ConnectorConfiguration\IInboxConnectorConfiguration.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Messaging\IBasePropertyBag.cs" />
+    <Compile Include="Messaging\IBizMessage.cs" />
+    <Compile Include="Messaging\IBizpipeManager.cs" />
+    <Compile Include="Messaging\IBizTransaction.cs" />
+    <Compile Include="Messaging\IBizTransactionManager.cs" />
+    <Compile Include="Messaging\IFatpipeMessage.cs" />
+    <Compile Include="IIdentifier.cs" />
+    <Compile Include="Onboarding\IInboundAs2PropertyBag.cs" />
+    <Compile Include="Onboarding\IInboundEdiPropertyBag.cs" />
+    <Compile Include="Messaging\INotificationMessage.cs" />
+    <Compile Include="Onboarding\IOutboundAs2PropertyBag.cs" />
+    <Compile Include="Onboarding\IOutboundEdiPropertyBag.cs" />
+    <Compile Include="IPartner.cs" />
+    <Compile Include="IPartnerAccount.cs" />
+    <Compile Include="ITenant.cs" />
+    <Compile Include="Messaging\ITransformationDefinition.cs" />
+    <Compile Include="Messaging\MessageBody.cs" />
+    <Compile Include="Messaging\MessageHeader.cs" />
+    <Compile Include="Messaging\MessageProcessingResult.cs" />
+    <Compile Include="Messaging\MessageStatus.cs" />
+    <Compile Include="Onboarding\Address.cs" />
+    <Compile Include="Onboarding\AS2Properties.cs" />
+    <Compile Include="Onboarding\AvailableService.cs" />
+    <Compile Include="Onboarding\ClaimAckServiceConfiguration.cs" />
+    <Compile Include="Onboarding\ContactInfo.cs" />
+    <Compile Include="Onboarding\CommonProperties.cs" />
+    <Compile Include="Onboarding\Identifier.cs" />
+    <Compile Include="Onboarding\DocumentProcessorServiceConfiguration.cs" />
+    <Compile Include="Onboarding\EDIIdentity.cs" />
+    <Compile Include="Onboarding\EdiProperties.cs" />
+    <Compile Include="Onboarding\FtpTransportProtocol.cs" />
+    <Compile Include="Onboarding\Invitation.cs" />
+    <Compile Include="Onboarding\Partner.cs" />
+    <Compile Include="Onboarding\Service.cs" />
+    <Compile Include="Onboarding\ServiceConfiguration.cs" />
+    <Compile Include="Onboarding\Tenant.cs" />
+    <Compile Include="Onboarding\TransformationInfo.cs" />
+    <Compile Include="Onboarding\TransportProtocol.cs" />
+    <Compile Include="PlugConfiguration\PlugConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyBagType.cs" />
+    <Compile Include="Messaging\RoutingInfo.cs" />
+    <Compile Include="Commerce\OrderManagement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContractsClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Onboarding\ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

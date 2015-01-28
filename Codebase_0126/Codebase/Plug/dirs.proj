@@ -1,0 +1,26 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         ToolsVersion="3.5">
+
+  <!-- Reference: http://msdn.microsoft.com/en-us/magazine/dd483291.aspx -->
+
+  <!-- Insert any customizations for settings here -->
+
+  <Import Project="$(BuildDirPath)\root.setting"/>
+
+  <!-- Define all ProjectFiles here -->
+  <ItemGroup>
+    <ProjectFiles Include="Plug\PlugDataModel.csproj"/>
+    <ProjectFiles Include="DocumentTransformer\DocumentTransformer.csproj"/>
+    <ProjectFiles Include="EDIPlug\EDIPlug.csproj"/>
+    <ProjectFiles Include="FlatFilePlug\FlatFilePlug.csproj"/>
+    <ProjectFiles Include="PlugAuthoring\PlugAuthoring.csproj"/>
+
+    <ProjectFiles Include="epplus\EPPlus\EPPlus.csproj"/>
+    <ProjectFiles Include="epplus\SampleApp\EPPlusSamples.csproj"/>
+  </ItemGroup>
+
+  <Import Project="$(BuildDirPath)\root.traversal.targets"/>
+
+  <!-- Insert any customizations for targets here -->
+
+</Project>

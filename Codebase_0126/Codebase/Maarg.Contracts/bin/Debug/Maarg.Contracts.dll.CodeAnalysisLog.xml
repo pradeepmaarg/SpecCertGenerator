@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Namespaces>
+  <Namespace Name="Maarg.Contracts.Commerce">
+   <Messages>
+    <Message Id="Maarg" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Maarg' in namespace name 'Maarg.Contracts.Commerce'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+  <Namespace Name="Maarg.Contracts.GCValidate">
+   <Messages>
+    <Message Id="Maarg" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Maarg' in namespace name 'Maarg.Contracts.GCValidate'.</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="C:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\bin\Debug\Maarg.Contracts.dll">
+   <Modules>
+    <Module Name="maarg.contracts.dll">
+     <Namespaces>
+      <Namespace Name="Maarg.Contracts">
+       <Types>
+        <Type Name="AgentType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+           <Issue Name="NotInt32" Certainty="60" Level="Warning">If possible, make the underlying type of 'AgentType' System.Int32 instead of 'short'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="AvailableService" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Services" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="AvailableService.cs" Line="13">Change 'AvailableService.Services' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="AvailableService.cs" Line="13">Change 'List&lt;Service&gt;' in 'AvailableService.Services' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BizMessageType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ASN856" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="ASN" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'ASN' in member name 'BizMessageType.ASN856' by changing it to 'Asn'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#INV810" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="INV" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'INV' in member name 'BizMessageType.INV810' by changing it to 'Inv'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#POA855" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="POA" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'POA' in member name 'BizMessageType.POA855' by changing it to 'Poa'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ClaimAckServiceConfiguration" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Ack" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Ack' in type name 'ClaimAckServiceConfiguration'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#EDIId" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="EDI" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="ClaimAckServiceConfiguration.cs" Line="16">Correct the casing of 'EDI' in member name 'ClaimAckServiceConfiguration.EDIId' by changing it to 'Edi'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EmailIds" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="ClaimAckServiceConfiguration.cs" Line="22">Change 'ClaimAckServiceConfiguration.EmailIds' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="ClaimAckServiceConfiguration.cs" Line="22">Change 'List&lt;string&gt;' in 'ClaimAckServiceConfiguration.EmailIds' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ConfigurationType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClaimAck" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Ack" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Ack' in member name 'ConfigurationType.ClaimAck' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ContactInfo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#EMail" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="EMail" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="ContactInfo.cs" Line="36">The compound word 'EMail' in member name 'ContactInfo.EMail' exists as a discrete term. If your usage is intended to be single word, case it as 'Email' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DocumentProcessorServiceConfiguration" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#EDIInstances" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="76">Change 'DocumentProcessorServiceConfiguration.EDIInstances' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="76">Change 'List&lt;string&gt;' in 'DocumentProcessorServiceConfiguration.EDIInstances' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="EDI" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="76">Correct the casing of 'EDI' in member name 'DocumentProcessorServiceConfiguration.EDIInstances' by changing it to 'Edi'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EDIInstanceUrls" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="52">Change 'DocumentProcessorServiceConfiguration.EDIInstanceUrls' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="52">Change 'List&lt;string&gt;' in 'DocumentProcessorServiceConfiguration.EDIInstanceUrls' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="EDI" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="52">Correct the casing of 'EDI' in member name 'DocumentProcessorServiceConfiguration.EDIInstanceUrls' by changing it to 'Edi'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LatestPlugUrl" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="58">Change the type of property 'DocumentProcessorServiceConfiguration.LatestPlugUrl' from string to System.Uri.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Transformations" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="92">Change 'DocumentProcessorServiceConfiguration.Transformations' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="92">Change 'List&lt;TransformationInfo&gt;' in 'DocumentProcessorServiceConfiguration.Transformations' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TransformationUrls" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="64">Change 'DocumentProcessorServiceConfiguration.TransformationUrls' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="64">Change 'List&lt;string&gt;' in 'DocumentProcessorServiceConfiguration.TransformationUrls' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertyNamesShouldNotMatchGetMethods" Category="Microsoft.Naming" CheckId="CA1721" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="BaseType" Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="DocumentProcessorServiceConfiguration.cs" Line="34">The property name 'DocumentProcessorServiceConfiguration.Type' is confusing given the existence of inherited method 'object.GetType()'. Rename or remove this property.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DocumentType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#EDI_850" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="EDI" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'EDI' in member name 'DocumentType.EDI_850' by changing it to 'Edi'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DocumentType.EDI_850'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EDI_937" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="EDI" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'EDI' in member name 'DocumentType.EDI_937' by changing it to 'Edi'.</Issue>
+            </Message>
+            <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Remove the underscores from member name 'DocumentType.EDI_937'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EDIIdentity" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="EDI" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'EDI' in type name 'EDIIdentity' by changing it to 'Edi'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IBizMessage" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Actions" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;BizMessageAction&gt;' in 'IBizMessage.Actions' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IBizTransactionManager" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetInboundMessages(Maarg.Contracts.IPartner)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IFatpipeMessage&gt;' in 'IBizTransactionManager.GetInboundMessages(IPartner)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetInboundMessages(Maarg.Contracts.IPartner,System.DateTime,System.DateTime)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IFatpipeMessage&gt;' in 'IBizTransactionManager.GetInboundMessages(IPartner, DateTime, DateTime)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetOutboundMessages(Maarg.Contracts.IPartner)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IFatpipeMessage&gt;' in 'IBizTransactionManager.GetOutboundMessages(IPartner)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetOutboundMessages(Maarg.Contracts.IPartner,System.DateTime,System.DateTime)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IFatpipeMessage&gt;' in 'IBizTransactionManager.GetOutboundMessages(IPartner, DateTime, DateTime)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProcessedMessages(Maarg.Contracts.IPartner)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IFatpipeMessage&gt;' in 'IBizTransactionManager.GetProcessedMessages(IPartner)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProcessedMessages(Maarg.Contracts.IPartner,System.DateTime,System.DateTime)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IFatpipeMessage&gt;' in 'IBizTransactionManager.GetProcessedMessages(IPartner, DateTime, DateTime)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IFatpipeManager" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Fatpipe" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Fatpipe' in type name 'IFatpipeManager'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DeQFromIncomingQ(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IFatpipeMessage&gt;' in 'IFatpipeManager.DeQFromIncomingQ(int)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="De" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'De' in member name 'IFatpipeManager.DeQFromIncomingQ(int)' by changing it to 'DE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DeQFromOutgoingQ(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IOutboundFatpipeMessage&gt;' in 'IFatpipeManager.DeQFromOutgoingQ(int)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="De" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'De' in member name 'IFatpipeManager.DeQFromOutgoingQ(int)' by changing it to 'DE'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EnQToIncomingMessageQ(System.Collections.Generic.List`1&lt;Maarg.Contracts.IFatpipeMessage&gt;,Maarg.Contracts.IMessageHandlerAgent)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IFatpipeMessage&gt;' in 'IFatpipeManager.EnQToIncomingMessageQ(List&lt;IFatpipeMessage&gt;, IMessageHandlerAgent)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="En" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'En' in member name 'IFatpipeManager.EnQToIncomingMessageQ(List&lt;IFatpipeMessage&gt;, IMessageHandlerAgent)' by changing it to 'EN'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EnQToOutboundMessageQ(System.Collections.Generic.List`1&lt;Maarg.Contracts.IOutboundFatpipeMessage&gt;,Maarg.Contracts.IMessageHandlerAgent)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IOutboundFatpipeMessage&gt;' in 'IFatpipeManager.EnQToOutboundMessageQ(List&lt;IOutboundFatpipeMessage&gt;, IMessageHandlerAgent)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message Id="En" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'En' in member name 'IFatpipeManager.EnQToOutboundMessageQ(List&lt;IOutboundFatpipeMessage&gt;, IMessageHandlerAgent)' by changing it to 'EN'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="IOutboundFatpipeMessage" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Fatpipe" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Fatpipe' in type name 'IOutboundFatpipeMessage'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="IPartnerAccount" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#IsFirstTimeLogin" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Login" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="95" Level="Error">Replace the term 'Login' in member name 'IPartnerAccount.IsFirstTimeLogin' with the preferred alternate 'LogOn'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ITenant" Kind="Interface" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ListTenantFtpConnectorConfigurations()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IFtpConnectorConfiguration&gt;' in 'ITenant.ListTenantFtpConnectorConfigurations()' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ListTenantInboxConnectorConfigurations()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;IInboxConnectorConfiguration&gt;' in 'ITenant.ListTenantInboxConnectorConfigurations()' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MetadataType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+           <Issue Name="NotInt32" Certainty="60" Level="Warning">If possible, make the underlying type of 'MetadataType' System.Int32 instead of 'short'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="NewPartner" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ServiceConfiguration" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'NewPartner.ServiceConfiguration' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SubscribedServices" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="Partner.cs" Line="43">Change 'NewPartner.SubscribedServices' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="Partner.cs" Line="43">Change 'List&lt;Service&gt;' in 'NewPartner.SubscribedServices' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NewTenant" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#PartnerIdentifiers" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="Tenant.cs" Line="25">Change 'NewTenant.PartnerIdentifiers' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="Tenant.cs" Line="25">Change 'List&lt;string&gt;' in 'NewTenant.PartnerIdentifiers' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Partners" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="Tenant.cs" Line="33">Change 'NewTenant.Partners' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="Tenant.cs" Line="33">Change 'List&lt;NewPartner&gt;' in 'NewTenant.Partners' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SubscribedServices" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="Tenant.cs" Line="20">Change 'NewTenant.SubscribedServices' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Onboarding" File="Tenant.cs" Line="20">Change 'List&lt;Service&gt;' in 'NewTenant.SubscribedServices' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="OperationType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+           <Issue Name="NotInt32" Certainty="60" Level="Warning">If possible, make the underlying type of 'OperationType' System.Int32 instead of 'short'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="TransportProtocolType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#FTP" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="FTP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'FTP' in member name 'TransportProtocolType.FTP' by changing it to 'Ftp'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Maarg.Contracts.Commerce">
+       <Types>
+        <Type Name="BillingCycleSummary" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BillingLineItems" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Commerce" File="BillingCore.cs" Line="27">Change 'List&lt;BillingLineItem&gt;' in 'BillingCycleSummary.BillingLineItems' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BillingFrequency" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OneTime" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="OneTime" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'OneTime' in member name 'BillingFrequency.OneTime' exists as a discrete term. If your usage is intended to be single word, case it as 'Onetime' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ConsumptionResource" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Description" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_Description()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning">'ConsumptionResource.Description.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#set_Description(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning">'ConsumptionResource.Description.set(string)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#FriendlyId" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_FriendlyId()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning">'ConsumptionResource.FriendlyId.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#set_FriendlyId(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning">'ConsumptionResource.FriendlyId.set(string)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#Name" Kind="Property" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_Name()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning">'ConsumptionResource.Name.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+            <Accessor Name="#set_Name(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning">'ConsumptionResource.Name.set(string)' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Currency" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#USD" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="USD" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'USD' in member name 'Currency.USD' by changing it to 'Usd'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Offer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#RateSchedules" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Commerce" File="Offer.cs" Line="23">Change 'List&lt;RateSchedule&gt;' in 'Offer.RateSchedules' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Order" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Deprov" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Deprov" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Deprov' in member name 'Order.Deprov' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RateSchedule" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ConsumptionRateTiers" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Commerce" File="Offer.cs" Line="54">Change 'List&lt;ConsumptionRateTier&gt;' in 'RateSchedule.ConsumptionRateTiers' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SeatCountRateTiers" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Commerce" File="Offer.cs" Line="48">Change 'List&lt;SeatCountRateTier&gt;' in 'RateSchedule.SeatCountRateTiers' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SubscriptionState" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Deprov" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Deprov" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Deprov' in member name 'SubscriptionState.Deprov' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UsageAggregateByBillingCycle" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ResourceId" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#set_ResourceId(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+               <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Commerce" File="UsageBilling.cs" Line="42">In method 'UsageAggregateByBillingCycle.ResourceId.set(string)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+              </Message>
+              <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="DependsOnFix">
+               <Issue Certainty="75" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\Commerce" File="UsageBilling.cs" Line="42">In externally visible method 'UsageAggregateByBillingCycle.ResourceId.set(string)', validate parameter 'value' before using it.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UsageEvent" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#TimeOfValidationInMs" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Ms" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="85" Level="Error">Correct the casing of 'Ms' in member name 'UsageEvent.TimeOfValidationInMs' by changing it to 'MS'.</Issue>
+            </Message>
+            <Message Id="Ms" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Ms' in member name 'UsageEvent.TimeOfValidationInMs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Maarg.Contracts.GCValidate">
+       <Types>
+        <Type Name="BizRuleCertMetadata" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetCertFileDisplayName()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="BizRuleCertsMetadata.cs" Line="65">Change 'BizRuleCertMetadata.GetCertFileDisplayName()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Initialize(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="BizRuleCertsMetadata.cs" Line="19">Change 'List&lt;string&gt;' in 'BizRuleCertMetadata.Initialize(string)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Initialize(System.String,System.String,System.DateTime)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="BizRuleCertsMetadata.cs" Line="29">Change 'List&lt;string&gt;' in 'BizRuleCertMetadata.Initialize(string, string, DateTime)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="BizRuleCertsMetadata.cs" Line="32">In method 'BizRuleCertMetadata.Initialize(string, string, DateTime)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="BizRuleCertsMetadata.cs" Line="50">In method 'BizRuleCertMetadata.Initialize(string, string, DateTime)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BizRuleCertValidationResult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#RuleDefinitionValidationResults" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'BizRuleCertValidationResult.RuleDefinitionValidationResults' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;RuleDefinitionValidationResult&gt;' in 'BizRuleCertValidationResult.RuleDefinitionValidationResults' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BizRulesValidationResult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BizRuleValidationResults" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'BizRulesValidationResult.BizRuleValidationResults' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;BizRuleValidationResult&gt;' in 'BizRulesValidationResult.BizRuleValidationResults' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EdiValidationResults" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'BizRulesValidationResult.EdiValidationResults' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;EDIValidationResult&gt;' in 'BizRulesValidationResult.EdiValidationResults' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetAggregatedResult()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="BizRulesValidationResult.cs" Line="36">Change 'BizRulesValidationResult.GetAggregatedResult()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ToString()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Text.StringBuilder.AppendFormat(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="BizRulesValidationResult.cs" Line="67">Because the behavior of 'StringBuilder.AppendFormat(string, params object[])' could vary based on the current user's locale settings, replace this call in 'BizRulesValidationResult.ToString()' with a call to 'StringBuilder.AppendFormat(IFormatProvider, string, params object[])'. If the result of 'StringBuilder.AppendFormat(IFormatProvider, string, params object[])' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="BizRulesValidationResult.cs" Line="76">Because the behavior of 'StringBuilder.AppendFormat(string, params object[])' could vary based on the current user's locale settings, replace this call in 'BizRulesValidationResult.ToString()' with a call to 'StringBuilder.AppendFormat(IFormatProvider, string, params object[])'. If the result of 'StringBuilder.AppendFormat(IFormatProvider, string, params object[])' will be based on input from the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BizRuleValidationResult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#RuleInfo" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'BizRuleValidationResult.RuleInfo' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;BizRuleInfo&gt;' in 'BizRuleValidationResult.RuleInfo' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertyNamesShouldNotMatchGetMethods" Category="Microsoft.Naming" CheckId="CA1721" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="BaseType" Certainty="95" Level="Error">The property name 'BizRuleValidationResult.Type' is confusing given the existence of inherited method 'object.GetType()'. Rename or remove this property.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BtsAssemblyFilesMetadata" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Bts" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Bts' in type name 'BtsAssemblyFilesMetadata'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="EDIValidationResult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="EDI" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">Correct the casing of 'EDI' in type name 'EDIValidationResult' by changing it to 'Edi'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#SegmentValidationResults" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'EDIValidationResult.SegmentValidationResults' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;SegmentValidationResult&gt;' in 'EDIValidationResult.SegmentValidationResults' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#TransactionNumbers" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'EDIValidationResult.TransactionNumbers' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;string&gt;' in 'EDIValidationResult.TransactionNumbers' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertyNamesShouldNotMatchGetMethods" Category="Microsoft.Naming" CheckId="CA1721" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="BaseType" Certainty="95" Level="Error">The property name 'EDIValidationResult.Type' is confusing given the existence of inherited method 'object.GetType()'. Rename or remove this property.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RuleDefinitionValidationResult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertyNamesShouldNotMatchGetMethods" Category="Microsoft.Naming" CheckId="CA1721" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="BaseType" Certainty="95" Level="Error">The property name 'RuleDefinitionValidationResult.Type' is confusing given the existence of inherited method 'object.GetType()'. Rename or remove this property.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SegmentDefinitionValidationResult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertyNamesShouldNotMatchGetMethods" Category="Microsoft.Naming" CheckId="CA1721" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="BaseType" Certainty="95" Level="Error">The property name 'SegmentDefinitionValidationResult.Type' is confusing given the existence of inherited method 'object.GetType()'. Rename or remove this property.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SegmentValidationResult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertyNamesShouldNotMatchGetMethods" Category="Microsoft.Naming" CheckId="CA1721" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="BaseType" Certainty="95" Level="Error">The property name 'SegmentValidationResult.Type' is confusing given the existence of inherited method 'object.GetType()'. Rename or remove this property.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SpecCertValidationResult" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SegmentDefinitionValidationResults" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning">Change 'SpecCertValidationResult.SegmentDefinitionValidationResults' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error">Change 'List&lt;SegmentDefinitionValidationResult&gt;' in 'SpecCertValidationResult.SegmentDefinitionValidationResults' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TradingPartnerSpecCertMetadata" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetCertFileDisplayName()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="107">Because the behavior of 'string.Format(string, object, object)' could vary based on the current user's locale settings, replace this call in 'TradingPartnerSpecCertMetadata.GetCertFileDisplayName()' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="110">Because the behavior of 'string.Format(string, object, object, object)' could vary based on the current user's locale settings, replace this call in 'TradingPartnerSpecCertMetadata.GetCertFileDisplayName()' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="104">Change 'TradingPartnerSpecCertMetadata.GetCertFileDisplayName()' to a property if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Initialize(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="30">Change 'List&lt;string&gt;' in 'TradingPartnerSpecCertMetadata.Initialize(string)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Initialize(System.String,System.String,System.DateTime)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="40">Change 'List&lt;string&gt;' in 'TradingPartnerSpecCertMetadata.Initialize(string, string, DateTime)' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="44">In method 'TradingPartnerSpecCertMetadata.Initialize(string, string, DateTime)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="79">In method 'TradingPartnerSpecCertMetadata.Initialize(string, string, DateTime)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+            </Message>
+            <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="75">Because the behavior of 'string.ToUpper()' could vary based on the current user's locale settings, replace this call in 'TradingPartnerSpecCertMetadata.Initialize(string, string, DateTime)' with a call to 'string.ToUpper(CultureInfo)'. If the result of 'string.ToUpper(CultureInfo)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="90">Because the behavior of 'string.Format(string, object)' could vary based on the current user's locale settings, replace this call in 'TradingPartnerSpecCertMetadata.Initialize(string, string, DateTime)' with a call to 'string.Format(IFormatProvider, string, params object[])'. If the result of 'string.Format(IFormatProvider, string, params object[])' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="System.String.Equals(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="64">'TradingPartnerSpecCertMetadata.Initialize(string, string, DateTime)' passes 'StringComparison.InvariantCultureIgnoreCase' as the 'StringComparison' parameter to 'string.Equals(string, string, StringComparison)'. To perform a non-linguistic comparison, specify 'StringComparison.Ordinal' or 'StringComparison.OrdinalIgnoreCase' instead.</Issue>
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Maarg.Contracts\GCValidate" File="TradingPartnerSpecCertMetadata.cs" Line="68">'TradingPartnerSpecCertMetadata.Initialize(string, string, DateTime)' passes 'StringComparison.InvariantCultureIgnoreCase' as the 'StringComparison' parameter to 'string.Equals(string, string, StringComparison)'. To perform a non-linguistic comparison, specify 'StringComparison.Ordinal' or 'StringComparison.OrdinalIgnoreCase' instead.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Type" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="PropertyNamesShouldNotMatchGetMethods" Category="Microsoft.Naming" CheckId="CA1721" Status="Active" Created="2015-01-27 07:26:27Z" FixCategory="Breaking">
+             <Issue Name="BaseType" Certainty="95" Level="Error">The property name 'TradingPartnerSpecCertMetadata.Type' is confusing given the existence of inherited method 'object.GetType()'. Rename or remove this property.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection properties should be read only</Name>
+   <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection. Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</Description>
+   <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028">
+   <Name>Enum storage should be Int32</Name>
+   <Description>There is little or no benefit to using a type smaller than Int32. You might require a type that is larger than Int32 if: 1) the enumeration values are flags and there are or will be many (&amp;amp;gt;32) values, or 2) the type needs to be different from Int32 for backward compatibility. Avoid using an underlying type that is not integral.</Description>
+   <Resolution Name="NotInt32">If possible, make the underlying type of {0} System.Int32 instead of {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182147(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>Identifiers should be cased correctly</Name>
+   <Description>Type, namespace, and member identifiers are Pascal-cased. Parameter identifiers are camel-cased. Two letter acronyms within these identifiers should be upper-cased, for example, use System.IO instead of System.Io. Acronyms of three or more letters should be Pascal-cased, for example, use System.Xml instead of System.XML. The pascal-casing convention capitalizes the first letter of each word, as in BackColor. The camel-casing convention formats the first letter of the first word in lowercase and capitalizes the first letter of all subsequent words, as in backgroundColor. Although it may be common practice for some two letter acronyms to not be fully capitalized, violations of this rule should not be excluded for this reason. For example, 'DbConnection', is common but incorrect; use DBConnection. A violation of this rule might be required for compatibility with existing, non-managed symbol schemes. In general, however, these symbols should not be visible outside the assembly that uses them.</Description>
+   <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+   <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182240(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Assembly">Correct the spelling of '{0}' in assembly name {1}.</Resolution>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="Namespace">Correct the spelling of '{0}' in namespace name '{1}'.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>Identifiers should not contain underscores</Name>
+   <Description>Do not use underscores when specifying identifiers. Some generated Visual Studio identifiers for applications contain underscore characters. Underscore characters should generally be avoided in public identifiers.</Description>
+   <Resolution Name="Member">Remove the underscores from member name {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182245(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308">
+   <Name>Normalize strings to uppercase</Name>
+   <Description>Strings should be normalized to upper-case.</Description>
+   <Resolution Name="ToUpperInvariant">In method {0}, replace the call to {1} with String.ToUpperInvariant().</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386042(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="PropertyNamesShouldNotMatchGetMethods" Category="Microsoft.Naming" CheckId="CA1721">
+   <Name>Property names should not match get methods</Name>
+   <Description>A Get method was found with the same name as a property. Get methods and properties should have names that clearly distinguish their function. See the design guidelines for information regarding choosing properties over methods.</Description>
+   <Resolution Name="BaseType">The property name {0} is confusing given the existence of inherited method {1}. Rename or remove this property.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182253(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+   <Name>Specify CultureInfo</Name>
+   <Description>If an overload exists that takes a CultureInfo argument, it should always be called in favor of an overload that does not. The CultureInfo type contains culture-specific information required for performing numeric and string operations, such as casing, formatting, and string comparisons. In scenarios where conversion and parsing behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182189(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be based on input from the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will based on input stored and accessed by software, such as when it is loaded from disk or from a database, specify {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056">
+   <Name>URI properties should not be strings</Name>
+   <Description>If a property name contains "uri" or "url" or "urn" and it's typed as string, it should be changed to System.Uri.</Description>
+   <Resolution Name="Default">Change the type of property {0} from string to System.Uri.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182175(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309">
+   <Name>Use ordinal StringComparison</Name>
+   <Description>For non-linguistic comparisons, StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase should be used instead of the linguistically-sensitive StringComparison.InvariantCulture.</Description>
+   <Resolution Name="StringComparison">{0} passes '{1}' as the 'StringComparison' parameter to {2}. To perform a non-linguistic comparison, specify 'StringComparison.Ordinal' or 'StringComparison.OrdinalIgnoreCase' instead.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385972(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>Use preferred terms</Name>
+   <Description>Use preferred terms over deprecated alternates.</Description>
+   <Resolution Name="Member">Replace the term '{0}' in member name {1} with the preferred alternate '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182258(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+   <Name>Use properties where appropriate</Name>
+   <Description>Properties should be used instead of Get/Set methods in most situations. Methods are preferable to properties in the following situations: the operation is a conversion, is expensive or has an observable side-effect; the order of execution is important; calling the member twice in succession creates different results; a member is static but returns a mutable value; or the member returns an array.</Description>
+   <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182181(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="designrules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

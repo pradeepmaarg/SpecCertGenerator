@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DDC7E2C3-6A92-43CE-B207-125A0047E567}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maarg.Fatpipe.Plug.Authoring</RootNamespace>
+    <AssemblyName>Maarg.Fatpipe.Plug.Authoring</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BtmFileHandler\BtmFileReader.cs" />
+    <Compile Include="BtmFileHandler\FlatFileSpecCertGenerator.cs" />
+    <Compile Include="BtmFileHandler\OrganizationDetails.cs" />
+    <Compile Include="BtmFileHandler\OrganizationMetadata.cs" />
+    <Compile Include="BtmFileHandler\XmlSpecCertGenerator.cs" />
+    <Compile Include="BtmFileHandler\EdiSpecCertGenerator.cs" />
+    <Compile Include="BtmFileHandler\MapDetail.cs" />
+    <Compile Include="BtmFileHandler\SpecCertGenerator.cs" />
+    <Compile Include="DocumentPlugtoSpecCert.cs" />
+    <Compile Include="GCExcelReaderHelper.cs" />
+    <Compile Include="GCExcelToBizRuleSet.cs" />
+    <Compile Include="BtsAssemblyFilesReader\BtsAssemblyFilesReader.cs" />
+    <Compile Include="BtsAssemblyFilesReader\BtsAssemblyFilesReaderResult.cs" />
+    <Compile Include="BtsAssemblyFilesReader\BtsAssemblyFilesDetail.cs" />
+    <Compile Include="BtsAssemblyFilesReader\ZipFileUtil.cs" />
+    <Compile Include="XmlGCExcelToDocumentPlug.cs" />
+    <Compile Include="FlatFileGCExcelToDocumentPlug.cs" />
+    <Compile Include="X12GCExcelToDocumetPlug.cs" />
+    <Compile Include="DocumentPlugtoExcel.cs" />
+    <Compile Include="ExcelToDocumentPlug.cs" />
+    <Compile Include="ExcelToTransformPlug.cs" />
+    <Compile Include="GCExcelToDocumentPlug.cs" />
+    <Compile Include="SchemaReaderException.cs" />
+    <Compile Include="TransformPlugToExcel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Maarg.Contracts\Maarg.Contracts.csproj">
+      <Project>{E568C043-D9E8-494C-A3BA-F0A3EDB365CE}</Project>
+      <Name>Maarg.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\epplus\EPPlus\EPPlus.csproj">
+      <Project>{7B288026-5502-4A39-BF41-77E086F3E4A3}</Project>
+      <Name>EPPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plug\PlugDataModel.csproj">
+      <Project>{04BB472C-A552-4417-8C9D-C605555B84F6}</Project>
+      <Name>PlugDataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BtmFileHandler\810_Inbound_CovastToX12Map.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\810_Outbound_CovastToX12Map.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\810_SpecCertTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\850_Inbound_CovastToX12Map.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\850_Outbound_CovastToX12Map.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\850_SpecCertTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\856_Inbound_CovastToX12Map.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\856_Outbound_CovastToX12Map.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\856_SpecCertTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\FlatFileSpecCertTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\OrganizationMetadata.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="BtmFileHandler\XmlSpecCertTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

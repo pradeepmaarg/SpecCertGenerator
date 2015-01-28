@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04BB472C-A552-4417-8C9D-C605555B84F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Maarg.Fatpipe.Plug.DataModel</RootNamespace>
+    <AssemblyName>Maarg.Fatpipe.Plug.DataModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizRuleSet.cs" />
+    <Compile Include="CharacterSet.cs" />
+    <Compile Include="BizRule.cs" />
+    <Compile Include="CustomXmlUrlResolver.cs" />
+    <Compile Include="DocumentPlugExtensions.cs" />
+    <Compile Include="DataTypeFactory.cs" />
+    <Compile Include="DocumentPlugValidationInfo.cs" />
+    <Compile Include="EDIError.cs" />
+    <Compile Include="EDIErrorCodes.cs" />
+    <Compile Include="EDIErrorsExtensions.cs" />
+    <Compile Include="EmailClient.cs" />
+    <Compile Include="FieldDataTypes.cs" />
+    <Compile Include="DocumentFragmentExtensions.cs" />
+    <Compile Include="FormulaFactory.cs" />
+    <Compile Include="PlugDataModelException.cs" />
+    <Compile Include="PlugDefinition.cs" />
+    <Compile Include="Pluglet.cs" />
+    <Compile Include="DocumentPlug.cs" />
+    <Compile Include="DocumentPlugFactory.cs" />
+    <Compile Include="FatpipeDocument.cs" />
+    <Compile Include="PlugletExtensions.cs" />
+    <Compile Include="PlugToXmlSchema.cs" />
+    <Compile Include="StreamExtensions.cs" />
+    <Compile Include="TransformInstance.cs" />
+    <Compile Include="TransformPlug.cs" />
+    <Compile Include="TransformPlugFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LoggingService\LoggingService.csproj">
+      <Project>{8E604022-942A-459C-B40B-A3E0B987968D}</Project>
+      <Name>LoggingService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Maarg.Contracts\Maarg.Contracts.csproj">
+      <Project>{E568C043-D9E8-494C-A3BA-F0A3EDB365CE}</Project>
+      <Name>Maarg.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\epplus\EPPlus\EPPlus.csproj">
+      <Project>{7B288026-5502-4A39-BF41-77E086F3E4A3}</Project>
+      <Name>EPPlus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

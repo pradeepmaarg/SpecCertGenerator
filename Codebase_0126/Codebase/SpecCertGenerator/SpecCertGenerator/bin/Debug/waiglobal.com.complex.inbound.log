@@ -1,0 +1,5 @@
+INFO - Reading maps from C:\Users\Rohit\Desktop\GC\Dropbox\GC\Incoming Solutions\FlatFile\waiglobal.com.complex.inbound.zip
+ERROR - Error encountered during processing C:\Users\Rohit\Desktop\GC\Dropbox\GC\Incoming Solutions\FlatFile\waiglobal.com.complex.inbound.zip file. Error: System.InvalidOperationException: Invalid directionPIES
+   at Maarg.Fatpipe.Plug.Authoring.BtmFileHandler.MapDetail..ctor(String currentFileName, String folderName, TransformPlug transformPlug, String specCertType) in c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\PlugAuthoring\BtmFileHandler\MapDetail.cs:line 93
+   at Maarg.Fatpipe.Plug.Authoring.BtmFileHandler.BtmFileReader.ReadMap(Stream zipFile, String zipFileName, String specCertType) in c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\PlugAuthoring\BtmFileHandler\BtmFileReader.cs:line 90
+   at SpecCertGenerator.Program.ReadAllBtmFiles(Parameters parameters) in c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\SpecCertGenerator\SpecCertGenerator\Program.cs:line 143

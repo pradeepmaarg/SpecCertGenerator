@@ -1,0 +1,10 @@
+INFO - Generating document plug from spec cert ATSCO Remanufacturing Inc - Spec Cert - Flat File - 810 - receive.xlsx
+INFO - Document plug generated successfully
+INFO - Validating instance file
+ERROR - SequenceNumber: -1, Name: N/A, StartIndex: -1, EndIndex: -1, Description: Internal error occurred. Maarg.Fatpipe.Plug.DataModel.PlugDataModelException: Error while adding intermediate in UNRECOGNIZED_SEGMENT path. First element in path UNRECOGNIZED_SEGMENT does not match with root element X12 of document
+   at Maarg.Fatpipe.Plug.DataModel.DocumentFragmentExtensions.AddIntermediateDocumentFragment(DocumentFragment document, String xPath) in c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\Plug\DocumentFragmentExtensions.cs:line 35
+   at Maarg.Fatpipe.Plug.DataModel.DocumentFragmentExtensions.AddDocumentFragment(DocumentFragment document, IDocumentFragment newFragment) in c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\Plug\DocumentFragmentExtensions.cs:line 119
+   at Maarg.Fatpipe.FlatFilePlug.FlatFileReader.CreateAndAddNewSegment(String segmentName, String[] segmentDetails) in c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\FlatFileReader.cs:line 242
+   at Maarg.Fatpipe.FlatFilePlug.FlatFileReader.ReadFile(Stream flatFileStream, IDocumentPlug documentPlug) in c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\Plug\FlatFilePlug\FlatFileReader.cs:line 102
+   at Maarg.Fatpipe.EDIPlug.GCEdiValidator.EdiValidator.ValidateEdi(String ediData, String ediFileName, String schemaFileName, String certFileDisplayName, String type, SpecCertFileType fileType, IDocumentPlug documentPlug, IFatpipeDocument& fatpipeDocument) in c:\Users\Rohit\Desktop\GC\Code and Binary\Codebase_0126\Codebase\GCValidate\GCEdiValidator\EdiValidator.cs:line 255
+ERROR - Validation result: Failed

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentPlug Name="X12" ElementDelimiter="124" SegmentDelimiter="13 10">
+  <Loop Tag="X12" Name="X12" Definition="GC root Node" DENameStandard="undef" DENumber="undef" IsMandatory="true" IsIgnore="false" MaxOccur="-1" IsRepeatable="true" DataType="" Path="X12">
+    <Segment Tag="AllowanceGroup" Name="AllowanceGroup" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="AllowanceGroup">
+      <Data Tag="AllowanceCharge" Name="AllowanceCharge" Definition="AllowanceCharge" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="AllowanceChargeDescription" Name="AllowanceChargeDescription" Definition="AllowanceChargeDescription" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="DetailGroup" Name="DetailGroup" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="DetailGroup">
+      <Data Tag="Detail1" Name="Detail1" Definition="Detail1" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="Detail2" Name="Detail2" Definition="Detail2" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="Detail03" Name="Detail03" Definition="Detail03" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="true" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="Detail04" Name="Detail04" Definition="Detail04" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="true" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="Detail5" Name="Detail5" Definition="Detail5" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="DetailAllowanceCharge" Name="DetailAllowanceCharge" Definition="DetailAllowanceCharge" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="DetailAllowanceChargeDescription" Name="DetailAllowanceChargeDescription" Definition="DetailAllowanceChargeDescription" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="DetailVendorPartNumber" Name="DetailVendorPartNumber" Definition="DetailVendorPartNumber" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="Envelope" Name="Envelope" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="Envelope">
+      <Data Tag="DocumentNumber" Name="DocumentNumber" Definition="DocumentNumber" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="Header" Name="Header" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="Header">
+      <Data Tag="Date" Name="Date" Definition="Date" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="Number" Name="Number" Definition="Number" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="PurchaseOrderDate" Name="PurchaseOrderDate" Definition="PurchaseOrderDate" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="PurchaseOrderNumber" Name="PurchaseOrderNumber" Definition="PurchaseOrderNumber" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="RemitToAddress" Name="RemitToAddress" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="RemitToAddress">
+      <Data Tag="City" Name="City" Definition="City" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="DiscountDaysDue" Name="DiscountDaysDue" Definition="DiscountDaysDue" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="DiscountDueDate" Name="DiscountDueDate" Definition="DiscountDueDate" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="DiscountPercent" Name="DiscountPercent" Definition="DiscountPercent" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="PostalCode" Name="PostalCode" Definition="PostalCode" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="Region" Name="Region" Definition="Region" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="TermsBasisDateId" Name="TermsBasisDateId" Definition="TermsBasisDateId" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="TermsTypeId" Name="TermsTypeId" Definition="TermsTypeId" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="RemitToCode" Name="RemitToCode" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="RemitToCode">
+      <Data Tag="Code" Name="Code" Definition="Code" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="RemitToName" Name="RemitToName" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="RemitToName">
+      <Data Tag="Name" Name="Name" Definition="Name" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="RemitToStreet" Name="RemitToStreet" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="RemitToStreet">
+      <Data Tag="Street" Name="Street" Definition="Street" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="RemitToStreetSupplemental" Name="RemitToStreetSupplemental" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="RemitToStreetSupplemental">
+      <Data Tag="StreetSupplemental" Name="StreetSupplemental" Definition="StreetSupplemental" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="ShipToAddress" Name="ShipToAddress" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="ShipToAddress">
+      <Data Tag="City" Name="City" Definition="City" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="PostalCode" Name="PostalCode" Definition="PostalCode" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="Region" Name="Region" Definition="Region" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="ShipToCode" Name="ShipToCode" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="ShipToCode">
+      <Data Tag="Code" Name="Code" Definition="Code" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="ShipToName" Name="ShipToName" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="ShipToName">
+      <Data Tag="Name" Name="Name" Definition="Name" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="ShipToStreet" Name="ShipToStreet" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="ShipToStreet">
+      <Data Tag="Street" Name="Street" Definition="Street" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="ShipToStreetSupplemental" Name="ShipToStreetSupplemental" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="ShipToStreetSupplemental">
+      <Data Tag="StreetSupplemental" Name="StreetSupplemental" Definition="StreetSupplemental" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="Summary" Name="Summary" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="Summary">
+      <Data Tag="TotalGrossWeight" Name="TotalGrossWeight" Definition="TotalGrossWeight" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="TotalUnitsShipped" Name="TotalUnitsShipped" Definition="TotalUnitsShipped" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="Terms" Name="Terms" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="Terms">
+      <Data Tag="DeferredAmountDue" Name="DeferredAmountDue" Definition="DeferredAmountDue" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="DeferredDueDate" Name="DeferredDueDate" Definition="DeferredDueDate" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="DiscountAmount" Name="DiscountAmount" Definition="DiscountAmount" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="NetDays" Name="NetDays" Definition="NetDays" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="NetDueDate" Name="NetDueDate" Definition="NetDueDate" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="PercentOfInvoicePayable" Name="PercentOfInvoicePayable" Definition="PercentOfInvoicePayable" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="TermsDescription" Name="TermsDescription" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="TermsDescription">
+      <Data Tag="Description" Name="Description" Definition="Description" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="TermsSupplemental" Name="TermsSupplemental" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="TermsSupplemental">
+      <Data Tag="DayOfMonth" Name="DayOfMonth" Definition="DayOfMonth" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="LocationType" Name="LocationType" Definition="LocationType" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="ShipPayMethod" Name="ShipPayMethod" Definition="ShipPayMethod" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+    <Segment Tag="Totals" Name="Totals" Definition="undef" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1000" IsRepeatable="true" DataType="" Path="Totals">
+      <Data Tag="TotalDiscount" Name="TotalDiscount" Definition="TotalDiscount" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+      <Data Tag="TotalInvoiceAmount" Name="TotalInvoiceAmount" Definition="TotalInvoiceAmount" DENameStandard="undef" DENumber="undef" IsMandatory="false" IsIgnore="false" MaxOccur="1" IsRepeatable="false" DataType="{AN -1 -1}" />
+    </Segment>
+  </Loop>
+</DocumentPlug>
